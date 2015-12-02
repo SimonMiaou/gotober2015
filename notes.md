@@ -29,3 +29,14 @@ ruby rental_offer/rental_offer_need.rb 192.168.99.100 5672
 ruby rental_offer/rental_offer_monitor.rb 10.0.0.2 5678
 ruby rental_offer/rental_offer_need.rb 10.0.0.2 5678
 ```
+
+
+# Back to talk
+
+No need for unit testing
+Feature testing by KPI
+
+Have to edit a service in a langage you don't mastering? Rewrite it
+
+Reuse the same paket when answering it
+Maybe there is data you don't care but others will

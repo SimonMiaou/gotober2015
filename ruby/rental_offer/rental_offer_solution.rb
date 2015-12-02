@@ -26,7 +26,7 @@ class RentalOfferSolution
   def suggest_solution(channel, exchange)
     queue = channel.queue("", :exclusive => true)
     queue.bind exchange
-    puts " [*] Waiting for solutions on the bus... To exit press CTRL+C"
+    puts " [*] Waiting for need on the bus... To exit press CTRL+C"
     queue.subscribe(block: true) do |delivery_info, properties, body|
       payload = JSON.parse(body)
       if payload['solutions'].empty?
