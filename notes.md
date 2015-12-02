@@ -40,3 +40,16 @@ Have to edit a service in a langage you don't mastering? Rewrite it
 
 Reuse the same paket when answering it
 Maybe there is data you don't care but others will
+
+# Back from lunch
+
+(TODO: check xchange conf in berlin)
+
+Pair programming may be the solution to too rich documentation?
+Don't need to document payload, we know it !
+
+No need for different channel
+-> Who need the message? We don't know, so spread it !
+-> Easy to debug, just take the bus and replay it on your laptop
+
+Don't manage concurency, only one consumer if there is concurency issues (not sur to followed everything here)
