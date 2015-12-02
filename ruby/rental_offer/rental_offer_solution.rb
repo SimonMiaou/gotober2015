@@ -35,6 +35,7 @@ class RentalOfferSolution
 
         puts " [x] Published a rental offer solution on the bus"
         payload['solutions'] << random_car
+        payload['breadcrumbs'] << 'Simon-RentalMembership'
         exchange.publish payload.to_json
       end
     end

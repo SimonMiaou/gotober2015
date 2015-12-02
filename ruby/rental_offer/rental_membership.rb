@@ -34,6 +34,7 @@ class RentalMembership
             solution
           end
 
+          json['breadcrumbs'] << 'Simon-RentalMembership'
           exchange.publish json.to_json
         end
       end
