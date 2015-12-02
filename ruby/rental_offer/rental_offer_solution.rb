@@ -15,7 +15,6 @@ class RentalOfferSolution
   def initialize(host, port)
     @host = host
     @port = port
-    @answered_ids = []
   end
 
   def start
@@ -30,13 +29,13 @@ class RentalOfferSolution
     puts " [*] Waiting for need on the bus... To exit press CTRL+C"
     queue.subscribe(block: true) do |delivery_info, properties, body|
       payload = JSON.parse(body)
-      if !@answered_ids.include?(payload['id'])
+      car = random_car
+
+      if !payload['solutions'].include?(car)
+
         puts " [x] Published a rental offer solution on the bus"
-        payload
         payload['solutions'] << random_car
-        payload['solutions'] << random_car if Random.rand(10) == 0
         exchange.publish payload.to_json
-        @answered_ids << payload['id']
       end
     end
   end
