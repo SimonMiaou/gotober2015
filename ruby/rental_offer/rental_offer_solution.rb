@@ -44,18 +44,18 @@ class RentalOfferSolution
     cars = [
       {
         'type' => 'super-car',
-        'modal' => 'Batmobile',
-        'price-per-day' => 1_000
+        'model' => 'Batmobile',
+        'price_per_day' => 1_000
       },
       {
         'type' => 'truck',
-        'modal' => 'Fire truck',
-        'price-per-day' => 500
+        'model' => 'Fire truck',
+        'price_per_day' => 500
       },
       {
         'type' => 'car',
-        'modal' => 'Ford Fiesta',
-        'price-per-day' => 100
+        'model' => 'Ford Fiesta',
+        'price_per_day' => 100
       }
     ]
 
